@@ -1,6 +1,8 @@
 #  Reinforcement Learning (DSAI 402) - 2025-2026
 
-- Repository for the RL undergraduate course (DSAI 402) for the 2025-2026 academic year at Zewail City University. 
+Repository for the RL undergraduate course (DSAI 402) for the 2025-2026 academic year at Zewail City University. 
+
+---
 
 ### Logistics
 
@@ -23,11 +25,11 @@ Tools/APIs |  [Gymnasium](https://gymnasium.farama.org/)
 
 Serial| Date |Topic | Contents | Lecture | Assignment
 ---|---|---|---|---|---
-1| | RL Basics | what is RL, action, value, reward, environemnt, k-armed bandit problem  | [Lecture XX] | [Assignment XX]
+1| | RL Basics | What is RL, action, value, reward, environemnt, k-armed bandit problem  | [Lecture XX] | [Assignment XX]
 2| | MDP | Markov process, Markov reward process  | [Lecture XX] | [Assignment XX]
 3| | MDP | Markov decision process | [Lecture XX] | [Assignment XX]
-4| | Bellman | dynamic programming, value, state functions | [Lecture XX] | [Assignment XX]
-5| | Bellman | policy evaluation, policy improvement, policy iteration, value iteration | [Lecture XX] | [Assignment XX]
+4| | Bellman | Value and state functions, dynamic programming | [Lecture XX] | [Assignment XX]
+5| | Bellman | Policy evaluation, policy improvement, policy iteration, value iteration | [Lecture XX] | [Assignment XX]
 6| | Midterm | | | 
 7| | TD | Temporal different learning | [Lecture XX] | [Assignment XX]
 8| | TD | Temporal different learning | [Lecture XX] | [Assignment XX]
@@ -36,10 +38,10 @@ Serial| Date |Topic | Contents | Lecture | Assignment
 11| | Policy Gradient | Policy gradient, policy representation | [Lecture XX] | [Assignment XX]
 12| | Policy Gradient | REINFORCE and its issues | [Lecture XX] | [Assignment XX]
 13| | Actor-Critic method | Actor-Critic, architecture, shared network | [Lecture XX] | [Assignment XX]
-14| | LLM and RL | chatbot training with RL | [Lecture XX] | [Assignment XX]
+14| | LLM and RL | Chatbot training with RL | [Lecture XX] | [Assignment XX]
 15| | Final | | | 
 
-* Please note that the syllabus content is subject to change throughout the semester. Topics may be added or removed based on the instructor’s discretion, student progress, and available time. Your feedback and participation will inform these adjustments to ensure alignment with course goals and schedule constraints.
+Please note that the syllabus content is subject to change throughout the semester. Topics may be added or removed based on the instructor’s discretion, student progress, and available time. Your feedback and participation will inform these adjustments to ensure alignment with course goals and schedule constraints.
 
 --- 
 
