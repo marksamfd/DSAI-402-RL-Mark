@@ -17,13 +17,11 @@
 	- From stop 3, 20% go to stop 2, 60% stay at stop 3, and 20% go to stop 4.
 	- From stop 4, 30% travel to stop 1, 30% to stop 2, 20% to stop 3, and 20% remain at stop 4.
 
-    - do the following 
+    - Perform the following tasks
         - Write the transition matrix T
         - What is the probability that a passenger currently at stop 3 will travel to stop 4 next?
     	- What is the probability that a passenger currently at stop 3 will reach stop 4 after two stops?
-    	- What is the probability that a passenger currently at stop 3 will reach stop 4 after three stops?
     	- What is the probability that a passenger currently at stop 3 will stay at stop 3 and not travel to any other stop next?
-    	- What is the probability that a passenger currently at stop 3 will travel to stop 1 next?
 
 
 ## Implementation 
@@ -32,7 +30,3 @@
 - Start from a chosen initial state, simulate the Markov chain for a large number of transitions 
 - Record the state at each step of the simulation
 - Use the library [networkx](https://networkx.org/) to plot the transition matrix as a graph 
-
-
-
-
