@@ -9,8 +9,8 @@ Repository for the RL undergraduate course (DSAI 402) for the 2025-2026 academic
 Course | Reinforcement Learning - DSAI 402
 ---|----
 Webpage| [https://github.com/m-fakhry/DSAI-402-RL](https://github.com/m-fakhry/DSAI-402-RL)
-Structure | 2-hour lecture (DAY TIME) and 3-hour lab (DAY TIME)
-TAs | XXX (Alphabetical order)
+Structure | 2-hour lecture (Mon 8-10) and 3-hour lab (Sun 10-1, 1-4, Tue 10-1, 1-4, Wed 1-4)
+TAs | Mohamed Talaat, Nada Selim, Osama, Yousef Elbaz (Alphabetical order)
 Grades | (final), (midterm and quizzes), (lab)
 Lab Policy| Assignments and quizzes
 Book | "_Reinforcement Learning, an Introduction_", Sutton and Barto, 2nd Edition, 2018
