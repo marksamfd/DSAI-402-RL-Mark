@@ -25,7 +25,7 @@ Tools/APIs |  [Gymnasium](https://gymnasium.farama.org/)
 
 Serial| Date |Topic | Contents | Lecture | Assignment
 ---|---|---|---|---|---
-1| | RL Basics | What is RL, action, value, reward, environemnt, k-armed bandit problem  | [Lecture XX] | [Assignment XX]
+1| | RL Basics | What is RL, action, value, reward, environemnt, k-armed bandit problem  | [Lecture 1](lectures/lec1.md) | [Assignment 1](assignments/assign1.md)
 2| | MDP | Markov process, Markov reward process  | [Lecture XX] | [Assignment XX]
 3| | MDP | Markov decision process | [Lecture XX] | [Assignment XX]
 4| | Bellman | Value and state functions, dynamic programming | [Lecture XX] | [Assignment XX]
