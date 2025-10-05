@@ -10,8 +10,8 @@ venue: Zewail City
 mdc: true
 ---
 
-# Reinforcement Learning 
-# (DSAI 402)
+# Reinforcement Learning <br> (DSAI 402)
+## Lecture 1
 
 Mohamed Ghalwash
 <Email v="mghalwash@zewailcity.edu.eg" />
