@@ -7,9 +7,9 @@
 - Read Chapter 1 (p. 57 - p. 67) from the supplementary book
 
 
-## Paper-based 
+<!-- ## Paper-based  -->
 
-Prove that adding a constant $c$ to all the rewards adds a constant, $v_c$, to the values of all states, and thus does not affect the relative values of any states under any policies. What is $v_c$ in terms of $c$ and $\gamma$?
+<!-- Prove that adding a constant $c$ to all the rewards adds a constant, $v_c$, to the values of all states, and thus does not affect the relative values of any states under any policies. What is $v_c$ in terms of $c$ and $\gamma$? -->
 
 ## Implementation 
 
