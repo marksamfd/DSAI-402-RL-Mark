@@ -27,7 +27,7 @@ Week| Date |Topic | Contents | Lecture | Assignment
 ---|---|---|---|---|---
 1| 09-22 | ~~Intro~~| Cancelled |  | 
 2| 09-29 | RL Basics | Introduction, what is RL, action, reward, environment, Markov process  | [Lecture 1](lectures/lec1.md) | [Assignment 1](assignments/assign1.md)
-3| | MDP | Markov reward process, Markov decision process, k-armed bandit problem  | [Lecture XX] | [Assignment XX]
+3| 10-06 | MDP | Markov reward process, Markov decision process, value functions, policy | [Lecture 2](lectures/lec2.md) | [Assignment 2](assignments/assign2.md)
 4| | Bellman | Value and state functions, dynamic programming | [Lecture XX] | [Assignment XX]
 5| | Bellman | Policy evaluation, policy improvement, policy iteration, value iteration | [Lecture XX] | [Assignment XX]
 6| | Midterm | | | 
