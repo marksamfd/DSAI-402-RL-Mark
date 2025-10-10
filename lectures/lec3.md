@@ -78,7 +78,9 @@ layout: top-title
 - $\pi(a|s)$
   - a mapping from states to probabilities of selecting each possible action
 
-```mermaid {theme: 'neutral', scale: 0.8}
+<div style="text-align:center;">
+
+```mermaid {theme: 'neutral', scale: 0.9}
 %% States: s1, s2; Actions: a1, a2
 %% Each cell shows \pi(a|s)
 flowchart TB
@@ -89,10 +91,10 @@ flowchart TB
     S2A1["$$\pi(a_1|s_2)$$"]
     S2A2["$$\pi(a_2|s_2)$$"]
   end
-  S1["$$s_1$$"]
-  S2["$$s_2$$"]
-  A1["$$a_1$$"]
-  A2["$$a_2$$"]
+  S1(("$$s_1$$"))
+  S2(("$$s_2$$"))
+  A1(("$$a_1$$"))
+  A2(("$$a_2$$"))
   S1 -- " " --> S1A1
   S1 -- " " --> S1A2
   S2 -- " " --> S2A1
@@ -101,14 +103,21 @@ flowchart TB
   S1A2 -- " " --> A2
   S2A1 -- " " --> A1
   S2A2 -- " " --> A2
+
+  linkStyle 0,4 stroke:#1f77b4,stroke-width:3px;
+  linkStyle 2,6 stroke:#d62728,stroke-width:3px;
+  classDef redNode fill:#2e2eff,color:#fff,stroke:#000,stroke-width:2px;
+  classDef blueNode fill:#E31243,stroke:#000,stroke-width:1px;
+  class S1A1 redNode;
+  class S2A1 blueNode;
 ```
+
+</div>
 
 <BottomBar/>
 
 ---
 layout: top-title
-# columns: is-10
-# align: l-lt-ct
 ---
 
 :: title :: 
@@ -121,6 +130,8 @@ layout: top-title
   - the state-value function of a state $s$ under a policy $\pi$
   - the expected return when starting in $s$ and following $\pi$ thereafter
 
+<div style="text-align:center;">
+
 ```mermaid {theme: 'neutral', scale: 0.8}
 %% State-value vector v_pi(s)
 flowchart TB
@@ -130,6 +141,7 @@ flowchart TB
   V1 --> V2 --> V3
 ```
 
+</div>
 
 <BottomBar/>
 
@@ -147,6 +159,8 @@ layout: top-title
   - the action-value function of taking action $a$ in state $s$ under a policy $\pi$ 
   - the expected return when performing action $a$ in state $s$ and following $\pi$ thereafter
 
+<div style="text-align:center;">
+
 ```mermaid {theme: 'neutral', scale: 0.8}
 %% Q(s,a) matrix for 2 states, 2 actions
 flowchart TB
@@ -157,10 +171,10 @@ flowchart TB
     Q21["$$q_\pi(s_2,a_1)$$"]
     Q22["$$q_\pi(s_2,a_2)$$"]
   end
-  S1["$$s_1$$"]
-  S2["$$s_2$$"]
-  A1["$$a_1$$"]
-  A2["$$a_2$$"]
+  S1(("$$s_1$$"))
+  S2(("$$s_2$$"))
+  A1(("$$a_1$$"))
+  A2(("$$a_2$$"))
   S1 -- " " --> Q11
   S1 -- " " --> Q12
   S2 -- " " --> Q21
@@ -169,15 +183,22 @@ flowchart TB
   Q12 -- " " --> A2
   Q21 -- " " --> A1
   Q22 -- " " --> A2
+
+  linkStyle 0,4 stroke:#1f77b4,stroke-width:3px;
+  linkStyle 2,6 stroke:#d62728,stroke-width:3px;
+  classDef redNode fill:#2e2eff,color:#fff,stroke:#000,stroke-width:2px;
+  classDef blueNode fill:#E31243,stroke:#000,stroke-width:1px;
+  class Q11 redNode;
+  class Q21 blueNode;
 ```
 
+</div>
 
 <BottomBar/>
 
 
 ---
 layout: top-title
-columns: is-1-11
 class: text-center
 ---
 
@@ -242,13 +263,12 @@ graph TD
 
 ---
 layout: top-title
-columns: is-1-11
 class: text-center
 ---
 
 :: title ::
 
-# Bellman
+# Bellman Equation 
 
 :: content :: 
 
@@ -256,14 +276,29 @@ class: text-center
   <div>
 
 $$
-{1|2|all}
+{1|2|2,3|all}
 \begin{array}{ll}
 q_\pi(s, a) 
          & =  \mathbb{E}_\pi \left[ R_{t+1} + \gamma q_\pi(s^\prime, a^{\prime}) \mid s, a \right] \\ \\
-         & = \sum_{s^\prime} p(s^\prime|s,a) \left[ r(s,a,s^\prime) + \gamma \sum_{a^\prime} \pi(a^\prime \mid s^\prime) q_{\pi}(s^\prime, a^\prime) \right]
+         & = \sum_{s^\prime} \textcolor{red}{p(s^\prime|s,a)} \left[ r(s,a,s^\prime) + \gamma \textcolor{green}{\sum_{a^\prime} \pi(a^\prime \mid s^\prime) q_{\pi}(s^\prime, a^\prime)} \right] \\ \\
+         & = \sum_{s^\prime} \textcolor{red}{p(s^\prime|s,a)} \left[ r(s,a,s^\prime) + \gamma \textcolor{green}{v_\pi(s^\prime)} \right]
 \end{array}
 $$
 
+<br/><br/><br/>
+
+<v-click>
+
+$$
+{0|1|all}
+\begin{array}{ll}
+v_\pi(s) 
+        & = \sum_a \textcolor{blue}{\pi(a|s)} \sum_{s^\prime} \textcolor{red}{p(s^\prime|s,a)} \left[ \textcolor{green}{r(s,a,s^\prime) + \gamma v_\pi(s^\prime)} \right] \\ \\ 
+        & = \sum_a \textcolor{blue}{\pi(a|s)} q_\pi(s, a) 
+\end{array}
+$$
+
+</v-click>
   </div>
   <div>
 
@@ -306,15 +341,26 @@ layout: top-title
 
 :: content :: 
 
-- For finite MDPs, we can precisely define an optimal policy in the following way.
-A policy $\pi$ is defined to be better than or equal to a policy $\pi^\prime$ if its expected return is greater than or equal to that of $\pi^\prime$ for all states.
-In other words, $\pi >= \pi^\prime$ if and only if $v_{\pi}(s) >= v_{pi^\prime}(s)$ for all $s \in S$
 
-- There is always at least one policy that is better than or equal to all other policies. This is an optimal policy
+A policy $\pi$ is defined to be better than or equal to a policy $\pi^\prime$ if its expected return is greater than or equal to that of $\pi^\prime$ for all states.
+
+<div style="text-align:center;">
+
+$\pi >= \pi^\prime$ if and only if $v_{\pi}(s) >= v_{\pi^\prime}(s)$ for all $s \in S$
+
+</div>
+
+<br/><br/><br/>
+
+There is always at least one policy that is better than or equal to all other policies. This is an optimal policy
+
+<div style="text-align:center;">
 
 $v_{*}(s) := max_\pi \; v_\pi(s)$
 
 $q_{*}(s, a) := max_\pi \; q_\pi(s, a)$
+
+</div> 
 
 <BottomBar/>
 
