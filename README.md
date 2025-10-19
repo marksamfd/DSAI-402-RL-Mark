@@ -10,7 +10,7 @@ Course | Reinforcement Learning - DSAI 402
 ---|----
 Webpage| [https://github.com/m-fakhry/DSAI-402-RL](https://github.com/m-fakhry/DSAI-402-RL)
 Structure | 2-hour lecture (Mon 8-10) and 3-hour lab (Sun 10-1, 1-4, Tue 10-1, 1-4, Wed 1-4)
-TAs | Mohamed Talaat, Nada Selim, Osama, Yousef Elbaz (Alphabetical order)
+TAs | Mohamed Talaat, Osama Ghandour, Yousef Elbaz (Alphabetical order)
 Grades | (final), (midterm and quizzes), (lab)
 Lab Policy| Assignments and quizzes
 Book | "_Reinforcement Learning, an Introduction_", Sutton and Barto, 2nd Edition, 2018
@@ -30,9 +30,9 @@ Week| Date |Topic | Contents | Lecture | Assignment
 3| 10-06 | MRP | Markov reward process| [Lecture 2](lectures/lec2.md) | [Assignment 2](assignments/assign2.md)
 4| 10-13 | MDP | Markov decision process, value functions, policy, Bellman equations | [Lecture 3](lectures/lec3.md) | [Assignment 3](assignments/assign3.md)
 5| | Dynamic programming | Policy evaluation, policy improvement, policy iteration, value iteration | [Lecture XX] | [Assignment XX]
-6| | Midterm | | | 
-7| | TD | Temporal different learning | [Lecture XX] | [Assignment XX]
-8| | TD | Temporal different learning | [Lecture XX] | [Assignment XX]
+6| | TD | Temporal difference learning | [Lecture XX] | [Assignment XX]
+7| | TD | Temporal difference learning | [Lecture XX] | [Assignment XX]
+8| | Midterm | | | 
 9| | QL | Tabular Q-learning, Deep Q-Learning | [Lecture XX] | [Assignment XX]
 10| | QL | DQL + Extensions (Dueling QL) | [Lecture XX] | [Assignment XX]
 11| | Policy Gradient | Policy gradient, policy representation | [Lecture XX] | [Assignment XX]
