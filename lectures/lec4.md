@@ -487,3 +487,5 @@ class: text-center
 # Learn More
 
 [Course Homepage](https://github.com/m-fakhry/DSAI-402-RL)
+
+<!-- https://gibberblot.github.io/rl-notes/single-agent/temporal-difference-learning.html -->

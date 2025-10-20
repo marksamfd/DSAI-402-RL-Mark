@@ -2,7 +2,8 @@
 
 ## Reading 
 
-- Read Sections 4.1, 4.2, 4.3, 4.4 from the main book
+- Read Sections 4.1, 4.2, and 4.3 from the main book
+- Compute the value function for the start state for the example in slide 8 in Lecture 4
 
 ## Implementation 
 
