@@ -35,8 +35,8 @@ Week| Date |Topic | Contents | Lecture | Assignment
 8| 11-10 | Midterm | | | 
 9| 11-17 | Model-free | Temporal difference learning | [Lecture 7](lectures/lec7.md) | [Assignment 5](assignments/assign5.md)
 10| 11-24 | ~~Cancelled~~ |  | | [Assignment 6](assignments/assign6.md) 
-11| 12-1 | QL | TD(0), n-step TD, effect of $n$ and $\alpha$, Sarsa | [Lecture XX] | Assignment on n-step TD vs MC
-12| 12-8 | QL | Tabular Q-learning, Deep Q-Learning, Extensions (Dueling QL) | [Lecture XX] | No assignment
+11| 12-1 | QL | TD(0), n-step TD, effect of $n$ and $\alpha$, Sarsa | [Lecture 8](lectures/lec8.md) | [Assignment 7](assignments/assign7.md) 
+12| 12-8 | QL | Tabular Q-learning, Deep Q-Learning, Extensions (Dueling QL) | [Lecture XX] | perpare for LAB QUIZ
 13| 12-15 | LAB QUIZ, Policy Gradient | Policy gradient, policy representation | [Lecture XX] | Assignment on DQL
 14| 12-22 | Policy Gradient | REINFORCE and its issues | [Lecture XX] | No assignment, prepare for final lab
 15| 12-29 | FINAL LAB, Actor-Critic method | Actor-Critic, architecture, shared network | [Lecture XX] | No assignment
