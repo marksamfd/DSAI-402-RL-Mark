@@ -33,7 +33,7 @@ Week| Date |Topic | Contents | Lecture | Assignment
 6| 10-27 | Model-free | value iteration, model-free | [Lecture 5](lectures/lec5.md) | No assignment, prepare for lab quiz
 7| 11-3 | Model-free | Lab Quiz, Monte Carlo, prediction, first and every visit, q value estimation | [Lecture 6](lectures/lec6.md) | No assignment to prepare for midterm exam
 8| 11-10 | Midterm | | | 
-9| 11-17 | Model-free | Temporal difference learning | [Lecture 7](lectures/lec7.md) | [Assignment 5](assignments/assign5.md)
+9| 11-17 | Model-free | Exploring start, $\epsilon$-greedy MC, Temporal difference learning | [Lecture 7](lectures/lec7.md) | [Assignment 5](assignments/assign5.md)
 10| 11-24 | ~~Cancelled~~ |  | | [Assignment 6](assignments/assign6.md) 
 11| 12-1 | QL | TD(0), n-step TD, effect of $n$ and $\alpha$, Sarsa | [Lecture 8](lectures/lec8.md) | [Assignment 7](assignments/assign7.md) 
 12| 12-8 | QL | Tabular Q-learning, Deep Q-Learning, Extensions (Dueling QL) | [Lecture XX] | perpare for LAB QUIZ
