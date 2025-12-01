@@ -38,8 +38,8 @@ class: ns-c-center-item
 :: content :: 
 
 - Model-based
-  - Value Iteration 
   - Policy Iteration
+  - Value Iteration 
 
 - Model-free 
   - MC
@@ -86,16 +86,19 @@ layout: top-title
 
 :: content :: 
 
-$${0|1|1,2|all}
+$${0|1|1,2,3|1,2,3,4,5|all}
 \begin{array}{rlll}
 \text{TD} & \Rightarrow \qquad & 
-v(s_t) & = v(s_t) + \alpha \left[ \textcolor{red}{R_{t+1} + \gamma v(s_{t+1})} - v(s_t) \right]\\\\
+v(s_t) & = v(s_t) + \alpha \left[ \textcolor{red}{R_{t+1} + \gamma v(s_{t+1})} - v(s_t) \right]\\
+&&&&\\
 \text{MC} & \Rightarrow \qquad & 
 v_(s_t) & = \mathbb{E} \left[ \textcolor{red}{R_{t+1} + \gamma G_{t+1}} \mid S_t = s \right] 
-\\\\
+\\
+&&&&\\
 \text{Value Iteration} & \Rightarrow \qquad & 
 v_\pi(s)  & = \max_a \sum_{s^\prime} p(s^\prime|s,a) \textcolor{red}{\left[ r(s,a,s^\prime) + \gamma v_\pi(s^\prime) \right]} 
-\\\\ 
+\\
+&&&&\\
 \text{Policy Evaluation} & \Rightarrow \qquad & 
 v_\pi(s)  & = \sum_a \pi(a|s) \sum_{s^\prime} p(s^\prime|s,a) \textcolor{red}{\left[ r(s,a,s^\prime) + \gamma v_\pi(s^\prime) \right]} 
 \\
@@ -138,7 +141,7 @@ layout: top-title
 
 :: content :: 
 
-One kind of intermediate method, then, would perform an update based on an intermediate number of rewards: more than one, but less than all of them until termination.
+One kind of intermediate method that would perform an update based on an intermediate number of rewards: more than one, but less than all of them until termination
 
 $$
 \begin{array}{ll}
@@ -148,22 +151,23 @@ v(s_t) & = v(s_t) + \alpha \left[ \textcolor{red}{R_{t+1} + \gamma v(s_{t+1})} -
 $$
 
 
-$${0|1|1,2|all}
+$${0|1|1,2,3|all}
 \begin{array}{rlll}
 \text{1-step TD} & \Rightarrow \qquad & 
 G_{t:t+1} & = R_{t+1} + \gamma v(s_{t+1})\\\\
 \text{2-step TD} & \Rightarrow \qquad & 
 G_{t:t+2} & = R_{t+1} + \gamma R_{t+2} + \gamma^2 v(s_{t+2})\\\\
-\\\\
+\\
+&&&&\\
 \text{$n$-step TD} & \Rightarrow \qquad & 
 G_{t:t+n} & = R_{t+1} + \gamma R_{t+2} + \ldots + \gamma^n v(s_{t+n})\\\\
-\\
 \end{array}
 $$
+<v-click>
 
 Then the update rule becomes 
 $v(s_t) = v(s_t) + \alpha \left[ \textcolor{red}{G_{t:t+n}} - v(s_t) \right]$ 
-
+</v-click>
 
 ---
 layout: image
@@ -233,35 +237,6 @@ columns: is-4
 <!-- - Check which one converge faster?  -->
 <!-- - Study the effect of $\alpha$ 
 - Study the effect of $n$  -->
-
---- 
-layout: top-title 
---- 
-
-:: title :: 
-
-# On-policy TD control (SARSA)
-
-:: content :: 
-
-- Estimate the action value function $q$ not the state value function $v$
-
-$$
-q(s_t, a_t) = q(s_t, a_t) + \alpha \left[ R_{t+1} + \gamma q(s_{t+1}, a_{t+1}) - q(s_t, a_t) \right]
-$$
-
-<v-click>
-
-- What is on-policy and off-policy?
-
-</v-click>
-
----
-layout: cover
---- 
-
-# Q-Learning
-
 
 ---
 layout: center
