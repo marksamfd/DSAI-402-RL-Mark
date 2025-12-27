@@ -38,7 +38,7 @@ Week| Date |Topic | Contents | Lecture | Assignment
 11| 12-1 | TD | TD(0), n-step TD, effect of $n$ and $\alpha$, Sarsa | [Lecture 8](lectures/lec8.md) | [Assignment 7](assignments/assign7.md) 
 12| 12-8 | QL | SARSA, Q-Learning | [Lecture 9](lectures/lec9.md) | prepare for LAB QUIZ
 13| 12-15 | Deep QL | Deep Q-Learning | [Lecture 10](lectures/lec10.md) | LAB QUIZ
-14| 12-22 | Applications | Applications of RL  | [Lecture XX] | 
+14| 12-22 | Applications | Applications of RL  | [Lecture 11](lectures/lec11.md) | 
 15| 12-29 | ~~Cancelled~~ |  |  | FINAL LAB
 16| | Final | | | 
 
